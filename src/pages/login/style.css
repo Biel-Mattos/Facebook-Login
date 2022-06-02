@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerr {
+    display: flex;
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    padding: 150px;
+}
+
+.box-left img {
+    max-width: 300px;
+    width: 100%;
+    margin-left: -30px;
+}
+
+.box-left {
+    width: 650px;
+}
+
+.box-left h1 {
+    width: 495px;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-right {
+    background-color: #fff;
+    width: 400px;
+    height: 310px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    border: 1px solid #c4c4c4;
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: 1px solid #1877f2;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.btn-e {
+    background-color: #1877f2;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-e:hover {
+    background-color: #074da8;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: #1877f2;
+    font: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn-c {
+    background-color: #42b72a;
+    border: none;
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn-c:hover {
+    cursor: pointer;
+    background-color: #23960c;
+}
+
+@media screen and (max-width:1200px) {
+    .containerr {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .box-left h1{
+        font-size: 24px;
+        width: 350px;
+    }
+
+    .box-left img {
+        margin-left: 10px;
+    }
+
+    .box-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box-left h1 {
+        text-align: center;
+        margin: 25px;
+    }
+}
